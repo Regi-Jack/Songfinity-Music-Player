@@ -1,0 +1,492 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+.m0 {
+    margin: 0px;
+}
+
+.p0 {
+    padding: 0px;
+}
+
+.bRed {
+    border: 1px solid red;
+}
+
+.flex {
+    display: flex;
+}
+
+.invert {
+    filter: invert();
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.left {
+    height: 98vh;
+    width: 24vw;
+    color: rgb(255, 255, 255);
+}
+
+.right {
+    height: 98vh;
+    width: 75vw;
+    background-color: #121212;
+    margin-top: 9px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.home {
+    background-color: #121212;
+    height: 23vh;
+    margin: 9px;
+    border-radius: 8px;
+}
+
+.crossIcon {
+    display: none;
+}
+
+.home ul {
+    padding: 8px;
+    margin: 0px 16px;
+}
+
+.home ul li {
+    font-weight: 700;
+    width: 25px;
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    padding: 11px 0px;
+    align-items: center;
+}
+
+.library {
+    background-color: #121212;
+    height: 75vh;
+    margin: 9px;
+    border-radius: 8px;
+}
+
+.library > li {
+    margin: 0px 18px;
+    font-weight: 700;
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 19px 5px;
+}
+
+.library ul li:hover {
+    background-color: rgb(181, 185, 185);
+}
+
+.library img {
+    width: 24px;
+}
+
+.playlist {
+    padding: 6px;
+    margin: 6px;
+    max-height: 70%;
+    overflow-y: scroll;
+}
+
+.playlist li {
+    border: 2px solid black;
+    border-radius: 12px;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    gap: 12px;
+}
+
+.header {
+    height: 42px;
+    padding: 10px 24px;
+    justify-content: space-between;
+    background-color: #333;
+    border-radius: 8px;
+}
+
+.hamArrows {
+    gap: 34px;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger img {
+    width: 24px;
+}
+
+.arrow {
+    gap: 19px;
+}
+
+.arrow img {
+    width: 17px;
+}
+
+#loginButton {
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    padding: 13px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    width: 120px;
+}
+
+#signUpButton {
+    color: #a5a1a1;
+    background-color: #121212;
+    padding: 13px 29px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: Helvetica, sans-serif;
+    border: none;
+    width: 120px;
+    border-radius: 18px;
+}
+
+#loginButton:hover {
+    font-size: 15px;
+    background-color: rgb(72, 238, 72);
+    /* font-weight: 800; */
+}
+
+#signUpButton:hover {
+    font-size: 15px;
+    color: white;
+}
+
+.Svg-sc-ytk21e-0 path {
+    fill: rgb(244, 244, 244); /* Change the fill color to black */
+}
+
+.folderHeading {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 16px 40px;
+}
+
+.folderStructure ul {
+    list-style-type: none;
+    gap: 5px;
+    padding: 15px 44px;
+    max-height: 455px;
+    overflow-y: scroll;
+    scrollbar-color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+}
+
+.folderStructure ul li {
+    padding: 6px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.folderStructure ul li:hover {
+    background-color: #d0cdcd;
+}
+
+.folderStructure ul li img {
+    width: calc(76vw / 6);
+    height: 230px;
+    border-radius: 8px;
+}
+
+.folderName {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.playbar {
+    background-color: #222121;
+    width: 98%;
+    height: 68px;
+    position: absolute;
+    bottom: 0px;
+    margin: 11px;
+    border-radius: 18px;
+}
+
+.playbarInfo {
+    justify-content: space-between;
+    margin-top: 14px;
+    width: 100%;
+}
+
+.songInfo {
+    font-weight: 800;
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    width: 410px;
+    margin-left: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.songChange {
+    gap: 22px;
+    height: 24px;
+    align-items: center;
+    width: 200px;
+}
+
+.songChange img {
+    height: 23px;
+}
+
+.songTime {
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    font-size: large;
+    margin-right: 8px;
+    width: 90px;
+}
+
+#playButton {
+    height: 42px;
+    filter: invert();
+}
+
+.seekbar {
+    width: 98%;
+    height: 4px;
+    background-color: rgb(48, 201, 97);
+    margin: 1px 1%;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 4px;
+    cursor: pointer;
+}
+
+.seekball {
+    width: 14px;
+    height: 14px;
+    background-color: rgb(255 255 255);
+    border-radius: 10px;
+    position: relative;
+    bottom: 5px;
+    left: 0px;
+    border: 0px solid;
+    transition: left 0.4s;
+}
+
+.playlist::-webkit-scrollbar {
+    width: 8px;
+}
+
+.playlist::-webkit-scrollbar-track {
+    background-color: #333; /* Dark background color for the scrollbar track */
+    border-radius: 6px;
+}
+
+.playlist::-webkit-scrollbar-thumb {
+    background-color: #666; /* Dark color for the scrollbar thumb */
+    border-radius: 6px;
+}
+
+.playlist::-webkit-scrollbar-thumb:hover {
+    background-color: #999;
+}
+
+.folderStructure ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #cbcbcb; /* Dark background color for the scrollbar track */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #989797; /* Dark color for the scrollbar thumb */
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #383838;
+}
+
+@media (max-width: 1100px) {
+    .left {
+        position: absolute;
+        left: -100%;
+        transition: all 0.4s;
+        transition-timing-function: ease-in-out;
+        z-index: 1;
+        width: 260px;
+    }
+
+    .home {
+        margin: -1px;
+    }
+
+    .crossIcon {
+        display: block;
+        width: 14px;
+        position: absolute;
+        left: 227px;
+        top: 22px;
+    }
+
+    .library {
+        margin: -1px;
+    }
+
+    .right {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .header {
+        border-radius: 0%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamArrows {
+        gap: 15px;
+    }
+
+    .hamArrows img {
+        width: 15px;
+    }
+
+    #signUpButton {
+        font-size: 12px;
+        width: 77px;
+        padding: 14px;
+    }
+
+    #loginButton {
+        font-size: 12px;
+        width: 77px;
+        padding: 14px;
+    }
+
+    #loginButton:hover {
+        font-size: 12px;
+        background-color: rgb(42, 232, 99);
+        width: 77px;
+        padding: 14px;
+    }
+    
+    #signUpButton:hover {
+        font-size: 12px;
+        color: #ffffff;
+        background-color: #121212;
+        width: 77px;
+        padding: 14px;
+    }
+
+    .folderStructure ul {
+        max-height: calc(100vh - 222px);
+        overflow-x: hidden;
+        justify-content: center;
+    }
+
+    .folderStructure ul li img {
+        width: calc(100vw / 4);
+        height: 30vh;
+    }
+
+    .playbar {
+        width: 95%;
+        height: 7%;
+        position: fixed;
+        bottom: 52px;
+    }
+
+    .playbarInfo {
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        position: relative;
+        bottom: 8px;
+    }
+
+    .songInfo {
+        width: 130px;
+        font-size: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .songChange {
+        gap: 8px;
+        width: 68px;
+    }
+
+    .songChange img {
+        width: 16px;
+    }
+
+    #playButton {
+        width: 25px;
+    }
+
+    .songTime {
+        width: 68px;
+        font-size: 12px;
+    }
+
+    
+
+    /* ::-webkit-scrollbar {
+        width: 100px;
+    } */
+
+    @media (max-width: 764px) {
+        .folderStructure ul {
+            max-height: 390px;
+        }
+
+        .folderStructure ul li img {
+            width: 90vw;
+            height: 30vh;
+        }
+
+        .folderStructure ul::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .seekbar {
+            width: 90%;
+            left: 13px;
+        }
+    }
+}

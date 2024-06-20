@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="icon" href="data:,"> -->
+    <link rel="icon" sizes="16x16" type="image/png" href="favicon.ico">
+</head>
+
+<body>
+    <script src="js/script.js"></script>
+    <div class="container m0 p0 flex">
+
+        <div class="left m0 p0">
+            <div class="home">
+                <img class="crossIcon invert" src="svgs/cross.svg" alt="closeTab">
+                <ul>
+                    <li>
+                        <img src="svgs/spotify.svg" alt="spotify" class="invert" />
+                    </li>
+                    <li class="cp">
+                        <img src="svgs/home.svg" alt="home" class="invert" />Home
+                    </li>
+                    <li class="cp">
+                        <img src="svgs/search.svg" alt="search" class="invert" />Search
+                    </li>
+                </ul>
+            </div>
+            <div class="library">
+                <li>
+                    <img src="svgs/library.svg" alt="library" class="invert" />Your Library
+                </li>
+                <ul class="playlist">
+                    <!-- make playlist here -->
+                    <!-- <li class="flex invert">
+                        <img src="music.svg" alt="music">
+                        <div class="playlistSongInfo invert">Careless Whisper - Artist Name</div>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="right m-0 p-0">
+            <div class="header flex">
+                <div class="hamArrows flex invert">
+                    <div class="hamburger">
+                        <img src="svgs/hamburger.svg" alt="hamburger">
+                    </div>
+                    <div class="arrow flex">
+                        <img src="svgs/leftArrow.svg" alt="leftArrow" class="cp" />
+                        <img src="svgs/rightArrow.svg" alt="rightArrow" class="cp" />
+                    </div>
+                </div>
+                <div class="loginMenu">
+                    <button id="signUpButton">Sign Up</button>
+                    <button id="loginButton">Log in</button>
+                </div>
+            </div>
+            <div class="folderHeading invert">
+                Popular Albums
+            </div>
+            <div class="folderStructure invert">
+                <ul class="insertFolders flex">
+                    <!-- <li>
+                        <img src="musicFolder.svg" alt="musicFolder">
+                        <div class="folderName">Folder 1</div>
+                    </li> -->
+                </ul>
+            </div>
+            <div class="playbar">
+                <div class="playbarInfo flex invert">
+                    <div class="songInfo ">MusicInfo</div>
+                    <div class="songChange  flex">
+                        <img src="svgs/previous.svg" alt="previous" class="previous cp">
+                        <img id="playButton" src="svgs/play.svg" alt="playPause" class="playButton cp">
+                        <img src="svgs/next.svg" alt="next" class="next cp">
+                    </div>
+                    <div class="songTime ">Timer</div>
+                </div>
+                <div class="seekbar">
+                    <div class="seekball cp">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
